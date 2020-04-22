@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="world-timezone-gitFlow" doc:id="0c5275c5-9544-4830-a7e0-c72a6067c3d0" >
-		<http:listener doc:name="Listener" doc:id="99f0340c-c0ef-4a10-8ddf-d1743deb6e6e" config-ref="HTTP_Listener_config" path="/world-timezone-git"/>
+		<http:listener doc:name="Listener" doc:id="99f0340c-c0ef-4a10-8ddf-d1743deb6e6e" config-ref="HTTP_Listener_config" path="/world-timezone"/>
 		<set-payload value="git sample project" doc:name="Set Payload" doc:id="e52173c9-5560-4d11-bfca-0753386f2c48" />
 	</flow>
 </mule>
